@@ -63,6 +63,11 @@ There are two things you can do about this warning:
   :ensure t
   :config (load-theme 'atom-one-dark t))
 
+;; install editorconfig for consistent settings across projects
+(use-package editorconfig
+  :ensure t
+  :config (editorconfig-mode 1))
+
 ;; install projectile for navigating through projects easily
 (use-package projectile
   :ensure t
